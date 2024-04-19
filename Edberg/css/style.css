@@ -27,10 +27,10 @@ nav .navbar {
     width: 100%;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-evenly;
     margin: auto;
     /* background: red; */
-    padding: 0 50px;
+    /* padding: 0 50px; */
 }
 
 .navbar .logo a {
@@ -181,6 +181,25 @@ nav .navbar .links li:hover .js-sub-menu {
 
 .navbar .nav-links .sidebar-logo {
     display: none;
+}
+
+.menu-btn {
+    display: none;
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 5px 10px;
+    border-radius: 3px;
+}
+
+@media screen and (max-width: 768px) {
+    .nav-links {
+        display: none;
+    }
+    .menu-btn {
+        display: block;
+    }
 }
 
 .navbar .bx-menu {
