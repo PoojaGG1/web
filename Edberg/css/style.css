@@ -563,8 +563,8 @@ nav{
 }
 
 .feature-card .card img {
-    max-width: 115%;
-    height: 45%;
+    max-width: 100%;
+    height: max-content;
     border-radius: 5px;
     object-fit: cover;
 }

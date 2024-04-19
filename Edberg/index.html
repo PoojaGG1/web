@@ -21,51 +21,50 @@
                 
                     <nav>
                         <div class="navbar">
-                          <i class='bx bx-menu'></i>
-                          <img src="\Edberg\images\ed.png" class="brand-logo" alt="" width="90" height="90" margin-top: 200px;>
-                          <div class="nav-links">
-                            
-                            <ul class="links">
-                                <li>
-                                    <a href="#">EXPLORE</a>
-                                    <i class='bx bxs-chevron-down htmlcss-arrow arrow  '></i>
-                                    <ul class="htmlCss-sub-menu sub-menu">
-                                      <li><a href="#">Web Design</a></li>
-                                      <li><a href="#">Login Forms</a></li>
-                                      <li><a href="#">Card Design</a></li>
-                                      <li class="more">
-                                        <span><a href="#">More</a>
+                            <i class='bx bx-menu'></i>
+                            <img src="\Edberg\images\ed.png" class="brand-logo" alt="" width="90" height="90" margin-top: 200px;>
+                            <div class="nav-links">
+
+                                <ul class="links">
+                                    <li>
+                                        <a href="#">EXPLORE</a>
+                                        <ul class="htmlCss-sub-menu sub-menu">
+                                            <li><a href="#">Web Design</a></li>
+                                            <li><a href="#">Login Forms</a></li>
+                                            <li><a href="#">Card Design</a></li>
+                                            <li class="more">
+                                                <span><a href="#">More</a>
                                         <i class='bx bxs-chevron-right arrow more-arrow'></i>
                                       </span>
-                                        <ul class="more-sub-menu sub-menu">
-                                          <li><a href="#">Neumorphism</a></li>
-                                          <li><a href="#">Pre-loader</a></li>
-                                          <li><a href="#">Glassmorphism</a></li>
+                                                <ul class="more-sub-menu sub-menu">
+                                                    <li><a href="#">Neumorphism</a></li>
+                                                    <li><a href="#">Pre-loader</a></li>
+                                                    <li><a href="#">Glassmorphism</a></li>
+                                                </ul>
+                                            </li>
                                         </ul>
-                                      </li>
-                                    </ul>
-                                  </li>
-                                  <li><a href="#">HOME</a></li>
-          
-                                  <li><a href="#">ABOUT US</a></li>
-                                  <li><a href="#">BLOG</a></li>
-                                </ul>
-                              </div>
+                                    </li>
+                                    <li><a href="#">HOME</a></li>
 
-                              <div class="search">
+                                    <li><a href="#">ABOUT US</a></li>
+                                    <li><a href="#">BLOG</a></li>
+                                </ul>
+                            </div>
+                            <button class="menu-btn" id="menu-btn">Menu</button>
+                            <div class="search">
                                 <input type="text" class="search-box" placeholder="search courses">
                                 <button class="search-btn">search</button>
                             </div>
-                              
+
                             <div class="login">
                                 <a href="regindex.html">LOGIN</a>
                             </div>
 
-                            </div>
-                          </nav>
-                          <script src="ab.js"></script>
-                                            
-                    
+                        </div>
+                    </nav>
+
+
+
 
     </header>
 
@@ -119,13 +118,13 @@
         </div>
         <div class="feature-card">
             <div class="card">
-                <img src="\Edberg\images\AI and Machine Learning certification course 2.png">
+                <img src="\Edberg\images\aiml.png">
                 <h4>Online Billing, Invoicing, & Contracts</h4>
                 <p>Simple and secure control of your organization’s financial and legal transactions. Send customized invoices and contracts</p>
                 <a href="\Edberg\index.html" target="_blank">Explore now</a>
             </div>
             <div class="card">
-                <img src="\Edberg\images\Cyber Security and Ethical Hacking new.png">
+                <img src="\Edberg\images\Data Science.png">
                 <h4>Easy Scheduling & Attendance Tracking</h4>
                 <p>Schedule and reserve classrooms at one campus or multiple campuses. Keep detailed records of student attendance</p>
                 <a href="\Edberg\index.html" target="_blank">Explore now</a>
@@ -138,7 +137,7 @@
             </div>
 
             <div class="card ">
-                <img src="\Edberg\images\Data Science.png">
+                <img src="\Edberg\images\Cyber Security and Ethical Hacking new.png">
                 <h4>Online Billing, Invoicing, & Contracts</h4>
                 <p>Simple and secure control of your organization’s financial and legal transactions. Send customized invoices and contracts</p>
                 <a href="\Edberg\index.html " target="_blank ">Explore now</a>
@@ -246,6 +245,43 @@
         </div>
     </footer>
 
+    <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+
+        // Next/previous controls
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        // Thumbnail image controls
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            let i;
+            let slides = document.getElementsByClassName("mySlides ");
+            let dots = document.getElementsByClassName("dot ");
+            if (n > slides.length) {
+                slideIndex = 1
+            }
+            if (n < 1) {
+                slideIndex = slides.length
+            }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none ";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active ", " ");
+            }
+            slides[slideIndex - 1].style.display = "block ";
+            dots[slideIndex - 1].className += " active ";
+        }
+    </script>
+    <script src="split.js "></script>
+    <script src="/Edberg/js/script.js"></script>
+    <!-- <script src="ab.js"></script> -->
 </body>
 
 </html>

@@ -1,6 +1,7 @@
-let slideIndex = 1;
-showSlides(slideIndex);
+const menuBtn = document.getElementById('menu-btn');
+const navLink = document.getElementById('nav-links');
 
+<<<<<<< HEAD:Edberg/script.js
 function plusSlides(n) {
   showSlides(slideIndex += n);
 }
@@ -27,3 +28,8 @@ let timer = setInterval(() => plusSlides(1), 2000); // Change 3000 to adjust tim
 let slideContainer = document.querySelector('.slideshow-container');
 slideContainer.addEventListener('mouseover', () => clearInterval(timer));
 slideContainer.addEventListener('mouseout', () => timer = setInterval(() => plusSlides(1), 2000)); 
+=======
+menuBtn.addEventListener('click', () => {
+    navLink.style.display = navLink.style.display === 'none' ? 'flex' : 'none';
+});
+>>>>>>> ec96aadb03149b30c7e99928642db971085d0d2e:Edberg/js/script.js
