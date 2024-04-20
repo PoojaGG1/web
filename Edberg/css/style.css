@@ -27,15 +27,8 @@ nav .navbar {
     width: 100%;
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-between;
     margin: auto;
-}
-
-.navbar .logo a {
-    font-size: 30px;
-    color: #fff;
-    text-decoration: none;
-    font-weight: 600;
 }
 
 nav .navbar .nav-links {
@@ -130,9 +123,8 @@ nav .navbar .links li:hover .js-sub-menu {
 }
 
 .search {
-    width: 400px;
+    width: 500px;
     display: inline-flex;
-    /* margin-left: 5%; */
 }
 
 .search-box {
@@ -146,10 +138,11 @@ nav .navbar .links li:hover .js-sub-menu {
     background: none;
     color: #a9a9a9;
     outline: none;
+    margin-left: 30%;
 }
 
 .search-btn {
-    width: 90px;
+    width: 20%;
     height: 40px;
     padding: 10px 20px;
     border: none;
@@ -169,35 +162,12 @@ nav .navbar .links li:hover .js-sub-menu {
 
 .login {
     list-style: none;
-    font-size: 20px;
+    font-size: 15px;
 }
 
 .login a {
     text-decoration: none;
     color: black;
-}
-
-.navbar .nav-links .sidebar-logo {
-    display: none;
-}
-
-.menu-btn {
-    display: none;
-    background-color: #333;
-    color: white;
-    border: none;
-    cursor: pointer;
-    padding: 5px 10px;
-    border-radius: 3px;
-}
-
-@media screen and (max-width: 768px) {
-    .nav-links {
-        display: none;
-    }
-    .menu-btn {
-        display: block;
-    }
 }
 
 .navbar .bx-menu {
@@ -209,12 +179,77 @@ nav .navbar .links li:hover .js-sub-menu {
         max-width: 100%;
         padding: 0 25px;
     }
-    nav .navbar .logo a {
-        font-size: 27px;
-    }
     nav .navbar .links li {
         padding: 0 10px;
         white-space: nowrap;
+    }
+    nav .navbar .links li a {
+        font-size: 15px;
+    }
+}
+
+@media (max-width:800px) {
+    nav {
+        position: relative;
+    }
+    .navbar .bx-menu {
+        display: block;
+    }
+    nav .navbar .nav-links {
+        position: fixed;
+        top: 0;
+        left: -100%;
+        display: block;
+        max-width: 270px;
+        width: 100%;
+        background: #fff2e1;
+        line-height: 40px;
+        padding: 20px;
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+        transition: all 0.5s ease;
+        z-index: 1000;
+    }
+    nav .navbar .links {
+        display: block;
+        margin-top: 20px;
+    }
+    nav .navbar .links li .arrow {
+        line-height: 40px;
+    }
+    nav .navbar .links li {
+        display: block;
+    }
+    nav .navbar .links li .sub-menu {
+        position: relative;
+        top: 0;
+        box-shadow: none;
+        display: none;
+    }
+    nav .navbar .links li .sub-menu li {
+        border-bottom: none;
+    }
+    .navbar .links li .sub-menu .more-sub-menu {
+        display: none;
+        position: relative;
+        left: 0;
+    }
+    .navbar .links li .sub-menu .more-sub-menu li {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .links li:hover .htmlcss-arrow,
+    .links li:hover .js-arrow {
+        transform: rotate(0deg);
+    }
+    .navbar .links li .sub-menu .more-sub-menu {
+        display: none;
+    }
+    .navbar .links li .sub-menu .more span {
+        /* background: red; */
+        display: flex;
+        align-items: center;
+        /* justify-content: space-between; */
     }
     nav .navbar .links li a {
         font-size: 15px;
@@ -399,13 +434,49 @@ nav .navbar .links li:hover .js-sub-menu {
 /* Slideshow container */
 
 .slideshow-container {
-    max-width: 550px;
+    max-width: 800px;
     position: relative;
     margin: auto;
 }
 
 
-/* Next & previous buttons */
+/* The fade effect - fade in initially */
+
+.mySlides {
+    display: none;
+    -webkit-animation: fadein 1.5s ease-in-out;
+    animation: fadein 1.5s ease-in-out;
+}
+
+@-webkit-keyframes fadein {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+
+/* Images within slides */
+
+.mySlides img {
+    width: 100%;
+    height: auto;
+    vertical-align: middle;
+}
+
+
+/* Controls (optional) */
 
 .prev,
 .next {
@@ -423,20 +494,19 @@ nav .navbar .links li:hover .js-sub-menu {
     user-select: none;
 }
 
-
-/* Position the "next button" to the right */
-
-.next {
-    right: 0;
-    border-radius: 3px 0 0 3px;
-}
-
-
-/* On hover, add a black background color with a little bit see-through */
-
 .prev:hover,
 .next:hover {
     background-color: rgba(0, 0, 0, 0.8);
+}
+
+.prev {
+    left: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.next {
+    right: 0;
+    border-radius: 0 3px 3px 0;
 }
 
 
@@ -450,17 +520,6 @@ nav .navbar .links li:hover .js-sub-menu {
     bottom: 8px;
     width: 100%;
     text-align: center;
-}
-
-
-/* Number text (1/3 etc) */
-
-.numbertext {
-    color: #f2f2f2;
-    font-size: 12px;
-    padding: 8px 12px;
-    position: absolute;
-    top: 0;
 }
 
 
