@@ -27,7 +27,7 @@ nav .navbar {
     width: 100%;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-evenly;
     margin: auto;
 }
 
@@ -120,6 +120,25 @@ nav .navbar .links li:hover .js-sub-menu {
 
 .links li .sub-menu .more:hover .more-sub-menu {
     display: block;
+}
+
+.menu-btn {
+    display: none;
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 5px 10px;
+    border-radius: 3px;
+}
+
+@media screen and (max-width: 768px) {
+    .nav-links {
+        display: none;
+    }
+    .menu-btn {
+        display: block;
+    }
 }
 
 .search {
