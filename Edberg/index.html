@@ -211,6 +211,78 @@
         </div>
     </section>
 
+
+    <section class="heroine">
+        <div class="heroine-text-container">
+          <h1>Learner Benefits</h1>
+          <p>Unparalleled Learning Experience with Industry Experts</p>
+        </div>
+      </section>
+
+
+    <section class="benefits-container">
+        <div class="benefit-card">
+          <img src="\Edberg\images\consulting.png">
+        </div>
+        <div class="benefit-card">
+          <img src="Edberg\images\rate.png">
+        </div>
+        <div class="benefit-card">
+          <img src="\Edberg\images\handshake.png">
+        </div>
+        <div class="benefit-card">
+          <img src="\Edberg\images\customer-service.png">
+        </div>
+      </section>
+      <section class="cta">
+        <a href="#">Start your learning journey today!</a>
+      </section>
+
+
+
+    <section class="Reviews">
+        <h2>Reviews</h2>
+        <div class="review-container">
+          <div class="review">
+            <img src="[image of Neeti Kejriwal]" alt="Neeti Kejriwal">
+            <div class="review-info">
+              <h3>Neeti Kejriwal</h3>
+              <p>Founder</p>
+            </div>
+            <div class="review-text">
+              <p>Human-Computer Interaction (HCI) for... [Insert rest of review here]</p>
+              <a href="#">Read More</a>
+            </div>
+          </div>
+          <div class="review">
+            <img src="[image of Simon Kuriakose]" alt="Simon Kuriakose">
+            <div class="review-info">
+              <h3>Simon Kuriakose</h3>
+              <p>Senior UI Development Manager</p>
+            </div>
+            <div class="review-text">
+              <p>As someone who recently completed the React course offered by Edureka, I can confidently... [Insert rest of review here]</p>
+              <a href="#">Read More</a>
+            </div>
+          </div>
+          <div class="review">
+            <img src="[image of Lins Varghese]" alt="Lins Varghese">
+            <div class="review-info">
+              <h3>Lins Varghese</h3>
+              <p>Load Administrator</p>
+            </div>
+            <div class="review-text">
+              <p>I have completed the DevOps Certification Training Course from Edureka, and it has been a tremendous... [Insert rest of review here]</p>
+              <a href="#">Read More</a>
+            </div>
+          </div>
+        </div>
+        <div class="view-all-reviews">
+            <a href="#">VIEW ALL REVIEWS ></a>
+        </div>
+      
+    </section>
+
     <section class="partner " style="margin-bottom: 20px ">
         <p>Trusted by 5,000+ Companies Worldwide</p>
         <div class="img ">
@@ -222,21 +294,52 @@
     </section>
 
     <footer class="mt-6 ">
-        <div class="subscribe-letter mt-4 ">
-            <h5>Subscribe to get our Newsletter</h5>
-            <div class="form ">
-                <input type="text " placeholder="Your Email ">
-                <button>Subscribe</button>
+        <div class="footer" style="display: flex">
+            <div style="display: flex; flex-direction: row; align-self: center">
+              <img src="\Edberg\images\ed.png" />
+              <p style="width: 250px; font-size: 14px; margin-left: 5px">
+                Lorem ipsum has been the industry's standard dummy text ever since the
+                1500s, when an unknown printer took a gallery of type and scrambled it
+                to make a type of specimen book
+              </p>
             </div>
-        </div>
-        <div class="links mt-4 ">
-            <a href=" ">Careers</a>
-            <a href=" ">Privacy</a>
-            <a href=" ">Terms & Condition</a>
-        </div>
-        <div class="copyright ">
-            <p>© 2021 Class Technologies Inc.</p>
-        </div>
+            <div>
+              <h4>Trending Courses</h4>
+              <p>a</p>
+              <p>b</p>
+              <p>c</p>
+              <p>d</p>
+            </div>
+            <div>
+              <h4>Company</h4>
+              <p>A</p>
+              <p>B</p>
+              <p>C</p>
+              <p>D</p>
+            </div>
+            <div>
+              <h4>Work With Us</h4>
+              <p>1</p>
+              <p>2</p>
+
+            </div>
+            
+                </div>
+                </div>
+
+                <div class="copyright ">
+                    <a href=" ">Careers</a>
+                    <a href=" ">Privacy</a>
+                    <a href=" ">Terms & Condition</a>
+                    <p>© 2024 Class Technologies Inc.</p>
+                </div>
+                    
+                    <div style="margin-top: 10px;">
+                      <img src="images/google.svg " style="height: 22px; margin-right: 10px;">
+                      
+                      <img src="images/facebook.svg" style="height: 22px; margin-right: 10px;">
+      
+                      </div>
     </footer>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script>
@@ -258,41 +361,6 @@
 
             scrollImages(); // Initial call to start scrolling
         });
-    </script>
-
-    <script>
-        let slideIndex = 1;
-        showSlides(slideIndex);
-
-        // Next/previous controls
-        function plusSlides(n) {
-            showSlides(slideIndex += n);
-        }
-
-        // Thumbnail image controls
-        function currentSlide(n) {
-            showSlides(slideIndex = n);
-        }
-
-        function showSlides(n) {
-            let i;
-            let slides = document.getElementsByClassName("mySlides ");
-            let dots = document.getElementsByClassName("dot ");
-            if (n > slides.length) {
-                slideIndex = 1
-            }
-            if (n < 1) {
-                slideIndex = slides.length
-            }
-            for (i = 0; i < slides.length; i++) {
-                slides[i].style.display = "none ";
-            }
-            for (i = 0; i < dots.length; i++) {
-                dots[i].className = dots[i].className.replace(" active ", " ");
-            }
-            slides[slideIndex - 1].style.display = "block ";
-            dots[slideIndex - 1].className += " active ";
-        }
     </script>
     <script src="split.js "></script>
     <script src="/Edberg/js/script.js"></script>
