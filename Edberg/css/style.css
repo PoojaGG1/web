@@ -523,17 +523,12 @@ nav .navbar .links li:hover .js-sub-menu {
 }
 
 
-/* Fading animation */
-
-.fade {
-    animation-name: fade;
-    animation-duration: 1s;
-}
+/* Company scrolling animation code begins */
 
 .image-container {
     display: flex;
     overflow: hidden;
-    width: 100%;
+    width: 300%;
     /* Adjust width as needed */
 }
 
@@ -548,8 +543,18 @@ nav .navbar .links li:hover .js-sub-menu {
 
 .image-container img {
     animation: scroll 10s linear infinite;
-    width: 100%;
-    /* Adjust image width as needed */
+    width: 130px;
+}
+
+
+/* Company scrolling animation ends */
+
+
+/* Fading animation */
+
+.fade {
+    animation-name: fade;
+    animation-duration: 1s;
 }
 
 @keyframes fade {
