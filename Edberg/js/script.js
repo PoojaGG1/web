@@ -2,6 +2,10 @@ const menuBtn = document.getElementById('menu-btn');
 const navLink = document.getElementById('nav-links');
 
 
+let slideIndex = 1;
+showSlides(slideIndex);
+
+
 function plusSlides(n) {
   showSlides(slideIndex += n);
 }
