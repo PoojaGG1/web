@@ -528,7 +528,7 @@ nav .navbar .links li:hover .js-sub-menu {
 .image-container {
     display: flex;
     overflow: hidden;
-    width: 300%;
+    width: auto;
     /* Adjust width as needed */
 }
 
@@ -579,6 +579,144 @@ nav .navbar .links li:hover .js-sub-menu {
 
 
 /* rgba(156,163,175 */
+
+
+
+.heroine {
+    background-color: #fff2e1;
+    padding: 50px 0;
+    text-align: center;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    width: auto;
+  }
+  
+  .heroine-text-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+  }
+  
+  .heroine h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+  }
+  
+  .heroine p {
+    font-size: 1.2em;
+    color: #333;
+  }
+
+
+.benefits-container {
+    background-color: #fff2e1;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+  }
+  
+  .benefit-card {
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 15px;
+    margin: 10px;
+    text-align: center;
+    width: 30%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .benefit-card h2 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+  }
+  
+  .benefit-card p {
+    font-size: 1em;
+    margin-bottom: 10px;
+  }
+  
+  .benefit-card ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .benefit-card li {
+    margin-bottom: 5px;
+  }
+  
+  .cta {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .cta a {
+    background-color: #f48c06;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1em;
+  }
+
+
+
+.Reviews{
+    padding: 20px;
+}
+
+.Reviews h2{
+  text-align: center;
+  padding: 20px;
+}
+.review-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    width: 80%;
+  }
+  
+  .review {
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px;
+    width: 30%;
+  }
+  
+  .review img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+  }
+  
+  .review-info {
+    margin-bottom: 10px;
+  }
+  
+  .review-text p {
+    margin-bottom: 5px;
+  }
+  
+  .view-all-reviews {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .view-all-reviews a {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+  }
+
 
 .partner {
     margin-top: 4rem;
@@ -680,94 +818,38 @@ footer {
     background-color: #252641;
     text-align: center;
     padding: 30px 20px;
+    color: #f2f2f2;
 }
 
-footer .logo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+.footer {
+    
+    height: 200px;
+    justify-content: space-evenly;
+    flex-direction: row;
+    font-size: 16px;
+  }
+  
+  .footer p {
+    margin: 0%;
+  }
+  .footer h4{
+    font-weight: bold;
+    margin-top: 30px;
+  }
 
-footer .logo .square {
-    width: 30px;
-    position: absolute;
-    height: 30px;
-    border: 1px solid #23bdee;
-    border-radius: 5px;
-    transform: rotate(45deg);
-}
-
-footer .logo h4 {
-    position: relative;
-    top: 0;
-    color: #fff;
-    left: 20px;
-}
-
-.v-line {
-    width: 1px;
-    height: 60px;
-    background-color: #9ca3af;
-    margin-left: 1.5rem;
-}
-
-footer .edu-logo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 1rem;
-}
-
-.edu-logo span {
-    width: 100px;
-    color: #fff;
-    font-size: 15px;
-}
-
-footer .subscribe-letter h5 {
-    color: rgb(209, 213, 219);
-    font-size: 15px;
-    font-weight: 500;
-    margin-bottom: 0.5rem;
-}
-
-footer .subscribe-letter input {
-    border: 1px solid #9ca3af;
-    background-color: transparent;
-    padding: 8px 20px;
-    border-radius: 25px;
-    width: 180px;
-    font-size: 15px;
-    font-weight: 500;
-}
-
-footer .subscribe-letter button {
-    background: linear-gradient( 105.5deg, rgb(84, 90, 231) 19.57%, rgb(57, 63, 207) 78.85%);
-    border: none;
-    padding: 10px 20px;
-    color: #fff;
-    font-size: 15px;
-    border-radius: 20px;
-    cursor: pointer;
-}
-
-footer .links a {
-    color: #9ca3af;
-    text-decoration: none;
-    font-size: 13px;
-    padding: 0px 10px;
-}
-
-footer .links a:nth-child(1),
-footer .links a:nth-child(2) {
-    border-right: 1px solid #9ca3af;
-}
-
-footer .copyright p {
+footer .copyright{
     color: #9ca3af;
     font-size: 13px;
     margin-top: 1rem;
+    align-items: center;
+    flex-wrap: nowrap;
 }
+
+
+
+footer img {
+    height: 90px;
+  }
 
 @media only screen and (max-width: 767px) {
     .hamburger {
