@@ -377,25 +377,6 @@ nav .navbar .links li:hover .js-sub-menu {
     }
 }
 
-.hamburger {
-    display: none;
-    flex-direction: column;
-    gap: 5px;
-}
-
-.hamburger .line {
-    width: 30px;
-    height: 3px;
-    transition: all 0.3s ease-in-out;
-    background-color: black;
-    border-radius: 5px;
-}
-
-.hamburger .line:nth-child(3) {
-    width: 15px;
-    margin-left: auto;
-}
-
 .hero {
     border-bottom-left-radius: 20%;
     border-bottom-right-radius: 20%;
