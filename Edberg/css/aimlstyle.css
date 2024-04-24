@@ -141,8 +141,7 @@ h2 {
 }
 
 .popup {
-    display: flex;
-    justify-content: center;
+    display: none;
     border-radius: 10px;
     position: fixed;
     max-width: 20%;
@@ -152,10 +151,7 @@ h2 {
     background-color: #f1f1f1;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
     padding: 10px;
-    display: none;
-    /* Hide initially */
     z-index: 9999;
-    /* Ensure it's above other content */
     animation: fadeIn 0.5s ease-in-out forwards;
 }
 
@@ -170,7 +166,6 @@ h2 {
 
 .fadeOut {
     animation: fadeOut 0.3s ease-in-out forwards;
-    /* Apply fade out animation */
 }
 
 @keyframes fadeOut {

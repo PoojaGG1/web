@@ -18,26 +18,34 @@ for (let i = 0; i < accordions.length; i++) {
 
 //popup window
 
-var popup = document.getElementById('popup');
-var isPopupVisible = false;
-
-window.addEventListener('scroll', function() {
+document.addEventListener('DOMContentLoaded', function() {
+    var popup = document.getElementById('popup');
+    var isPopupVisible = false;
     var scrollPosition = window.scrollY || document.documentElement.scrollTop;
 
-    if (scrollPosition > 300 && !isPopupVisible) { // Change 200 to the scroll position where you want the popup to appear
+    if (scrollPosition > 300) {
         popup.style.display = 'block';
-        popup.classList.remove('fadeOut');
-        popup.classList.add('fadeIn');
         isPopupVisible = true;
-    } else if (scrollPosition <= 300 && isPopupVisible) {
-        popup.classList.remove('fadeIn');
-        popup.classList.add('fadeOut');
-        isPopupVisible = false;
     }
-});
 
-popup.addEventListener('animationend', function() {
-    if (!isPopupVisible) {
-        popup.style.display = 'none';
-    }
+    window.addEventListener('scroll', function() {
+        var scrollPosition = window.scrollY || document.documentElement.scrollTop;
+
+        if (scrollPosition > 300 && !isPopupVisible) {
+            popup.style.display = 'block';
+            popup.classList.remove('fadeOut');
+            popup.classList.add('fadeIn');
+            isPopupVisible = true;
+        } else if (scrollPosition <= 300 && isPopupVisible) {
+            popup.classList.remove('fadeIn');
+            popup.classList.add('fadeOut');
+            isPopupVisible = false;
+        }
+    });
+
+    popup.addEventListener('animationend', function() {
+        if (!isPopupVisible) {
+            popup.style.display = 'none';
+        }
+    });
 });
