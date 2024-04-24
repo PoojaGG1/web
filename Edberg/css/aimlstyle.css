@@ -107,25 +107,9 @@ nav ul li a {
     text-decoration: none;
 }
 
-section {
-    padding: 20px;
-}
-
-footer {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 10px;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-}
-
 .get-certified-container {
     display: flex;
     flex-direction: column;
-    /* justify-content: center; */
-    /* margin-right: 30px; */
 }
 
 h2 {
@@ -156,10 +140,52 @@ h2 {
     background-color: #f86408;
 }
 
+.popup {
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+    position: fixed;
+    max-width: 20%;
+    top: 60%;
+    right: 5%;
+    transform: translateY(-50%);
+    background-color: #f1f1f1;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    display: none;
+    /* Hide initially */
+    z-index: 9999;
+    /* Ensure it's above other content */
+    animation: fadeIn 0.5s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.fadeOut {
+    animation: fadeOut 0.3s ease-in-out forwards;
+    /* Apply fade out animation */
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
 
 /* style.css */
 
-.container {
+.I-container {
     display: flex;
     align-items: center;
     margin-bottom: 20px;
@@ -194,15 +220,114 @@ h2 {
     margin-left: 20px;
 }
 
+
+/* Font Awesome icons */
+
+.fas {
+    font-family: FontAwesome;
+}
+
+.course-info-container {
+    background-color: #f1f1f1;
+    padding: 20px;
+    border-radius: 20px;
+    margin-top: 30px;
+}
+
+.course-info-container h2 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.accordion {
+    width: 800px;
+    margin: 90px auto;
+    color: black;
+    background-color: #f1f1f1;
+    padding: 45px 45px;
+    border-radius: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.accordion .container {
+    position: relative;
+    margin: 10px 10px;
+}
+
+
+/* Positions the labels relative to the .container. Adds padding to the top and bottom and increases font size. Also makes its cursor a pointer */
+
+.accordion .label {
+    position: relative;
+    padding: 10px 0;
+    font-size: 20px;
+    color: black;
+    cursor: pointer;
+}
+
+.accordion .label::before {
+    content: '+';
+    color: black;
+    position: absolute;
+    top: 50%;
+    right: -5px;
+    font-size: 30px;
+    transform: translateY(-50%);
+}
+
+
+/* Hides the content (height: 0), decreases font size, justifies text and adds transition */
+
+.accordion .content {
+    position: relative;
+    height: 0;
+    font-size: 20px;
+    text-align: justify;
+    width: 780px;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+
+/* Adds a horizontal line between the contents */
+
+.accordion hr {
+    width: 100;
+    margin-left: 0;
+    border: 1px solid grey;
+}
+
+.accordion .container.active .content {
+    height: 150px;
+}
+
+
+/* Changes from plus sign to negative sign once active */
+
+.accordion .container.active .label::before {
+    content: '-';
+    font-size: 30px;
+}
+
+.HC-side {
+    margin-left: 100px;
+    margin-right: 500px;
+}
+
+.highlights h1 {
+    text-align: center;
+}
+
 .highlights-container {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-evenly;
     margin-top: 30px;
+    padding: 10px;
 }
 
 .highlight-item {
     flex: 1;
+    max-width: 250px;
     margin-bottom: 30px;
     background-color: #f2f2f2;
     padding: 20px;
@@ -226,64 +351,28 @@ h2 {
     margin-top: 20px;
 }
 
-.dropdown {
-    position: relative;
-    display: inline-block;
+.certification-container {
+    flex: 1;
+    /* Make each child element take up half of the available space */
+    padding: 20px;
+    border-radius: 20px;
 }
 
-.dropbtn:hover,
-.dropbtn:focus {
-    background-color: #fff2e1;
+.certification-container {
+    background-color: #f1f1f1;
 }
 
-.dropbtn {
-    background-color: white;
-    color: black;
-    border: black 1px solid;
-    border-radius: 5px;
-    font-size: 16px;
-    cursor: pointer;
-    margin-bottom: 5px;
-    padding: 10px 20px;
+.certification-container h2 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    margin-top: 10px;
+    bottom: 0;
     width: 100%;
-}
-
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f1f1f1;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-    z-index: 1;
-}
-
-.dropdown-content a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-}
-
-.arrow-down {
-    border: solid black;
-    border-width: 0 3px 3px 0;
-    display: inline-block;
-    padding: 3px;
-    transform: rotate(45deg);
-    -webkit-transform: rotate(45deg);
-    position: absolute;
-    right: 20px;
-    top: 10px;
-}
-
-.dropdown-content a:hover {
-    background-color: #f1f1f1;
-}
-
-.dropdown a:hover {
-    background-color: #ddd;
-}
-
-.show {
-    display: block;
 }
