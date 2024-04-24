@@ -544,7 +544,7 @@ nav .navbar .links li:hover .js-sub-menu {
 .benefits-container {
     background-color: #fff2e1;
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
     justify-content: space-around;
     padding: 20px;
     border-bottom-left-radius: 50px;
