@@ -1,7 +1,67 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+.bg-cream {
+    background-color: #fff2e1;
+    position: inherit;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    height: 100px;
+    background: #fff2e1;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+    z-index: 99;
+}
+
+nav .navbar {
+    height: 100%;
+    max-width: 1250px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: auto;
+    /* background: red; */
+    padding: 0 50px;
+}
+
+nav .navbar .nav-links {
+    line-height: 70px;
+}
+
+nav .navbar .links {
+    display: flex;
+}
+
+nav .navbar .links li {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+    padding: 0 14px;
+}
+
+nav .navbar .links li a {
+    height: 100%;
+    text-decoration: none;
+    white-space: nowrap;
+    color: #141111;
+    font-size: 15px;
+    font-weight: 500;
+}
+
 .hero {
     border-bottom-left-radius: 10%;
     border-bottom-right-radius: 10%;
-    padding-bottom: 30px;
 }
 
 .hero .main {
@@ -20,11 +80,12 @@
 
 #aiimg {
     margin-left: 20px;
-    width: 700px;
+    width: 800px;
     height: auto;
     object-fit: cover;
     border-radius: 30px;
     border: #000000 2px solid;
+    /* border-width: ; */
 }
 
 header h1 {
@@ -46,32 +107,16 @@ nav ul li a {
     text-decoration: none;
 }
 
-.I-container {
-    display: flex;
-    align-items: center;
-    margin-bottom: 20px;
-    /* Add margin for spacing */
-}
-
-.course-image-container {
-    flex: 0 0 auto;
-    /* To prevent the image from resizing */
-    margin-right: 20px;
-    /* Adjust spacing */
-}
-
-.course-image-container img {
-    max-width: 100%;
-    /* Ensure the image does not exceed its container */
-    height: auto;
-    /* Maintain aspect ratio */
-}
-
 .get-certified-container {
-    flex: 1;
     display: flex;
     flex-direction: column;
-    /* Expand to fill remaining space */
+}
+
+h2 {
+    margin-bottom: 20px;
+    margin-right: 10px;
+    /* font-family: 'Poppins', sans-serif; */
+    color: darkblue;
 }
 
 .get-certified-container p {
@@ -96,22 +141,22 @@ nav ul li a {
 }
 
 .popup {
-    display: none;
+    display: flex;
+    justify-content: center;
     border-radius: 10px;
     position: fixed;
-    max-width: 22%;
+    max-width: 20%;
     top: 60%;
-    right: 3%;
+    right: 5%;
     transform: translateY(-50%);
     background-color: #f1f1f1;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
     padding: 10px;
+    display: none;
+    /* Hide initially */
     z-index: 9999;
+    /* Ensure it's above other content */
     animation: fadeIn 0.5s ease-in-out forwards;
-}
-
-.popup .desc {
-    margin-bottom: 10px;
 }
 
 @keyframes fadeIn {
@@ -125,6 +170,7 @@ nav ul li a {
 
 .fadeOut {
     animation: fadeOut 0.3s ease-in-out forwards;
+    /* Apply fade out animation */
 }
 
 @keyframes fadeOut {
@@ -136,9 +182,49 @@ nav ul li a {
     }
 }
 
-.HC-side {
-    margin-left: 3%;
-    margin-right: 28%;
+
+/* style.css */
+
+.I-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    /* Add margin for spacing */
+}
+
+.image-container {
+    flex: 0 0 auto;
+    /* To prevent the image from resizing */
+    margin-right: 20px;
+    /* Adjust spacing */
+}
+
+.image-container img {
+    max-width: 100%;
+    /* Ensure the image does not exceed its container */
+    height: auto;
+    /* Maintain aspect ratio */
+}
+
+.get-certified-container {
+    flex: 1;
+    /* Expand to fill remaining space */
+}
+
+#about {
+    text-align: center;
+}
+
+#about p {
+    text-align: left;
+    margin-left: 20px;
+}
+
+
+/* Font Awesome icons */
+
+.fas {
+    font-family: FontAwesome;
 }
 
 .course-info-container {
@@ -154,11 +240,11 @@ nav ul li a {
 }
 
 .accordion {
-    /* width: 800px; */
+    width: 800px;
     margin: 90px auto;
     color: black;
     background-color: #f1f1f1;
-    padding: 35px 35px;
+    padding: 45px 45px;
     border-radius: 20px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
@@ -166,18 +252,6 @@ nav ul li a {
 .accordion .container {
     position: relative;
     margin: 10px 10px;
-}
-
-.accordion .container.active .content {
-    height: 150px;
-}
-
-
-/* Changes from plus sign to negative sign once active */
-
-.accordion .container.active .label::before {
-    content: '-';
-    font-size: 30px;
 }
 
 
@@ -223,6 +297,23 @@ nav ul li a {
     border: 1px solid grey;
 }
 
+.accordion .container.active .content {
+    height: 150px;
+}
+
+
+/* Changes from plus sign to negative sign once active */
+
+.accordion .container.active .label::before {
+    content: '-';
+    font-size: 30px;
+}
+
+.HC-side {
+    margin-left: 100px;
+    margin-right: 500px;
+}
+
 .highlights h1 {
     text-align: center;
 }
@@ -254,18 +345,20 @@ nav ul li a {
 }
 
 h2 {
+    /* font-family: 'Courier New', Courier, monospace; */
     counter-reset: inherit;
     text-align: center;
     margin-top: 20px;
-    margin-bottom: 20px;
-    margin-right: 10px;
-    color: darkblue;
 }
 
 .certification-container {
     flex: 1;
+    /* Make each child element take up half of the available space */
     padding: 20px;
     border-radius: 20px;
+}
+
+.certification-container {
     background-color: #f1f1f1;
 }
 
