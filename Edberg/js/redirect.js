@@ -19,11 +19,11 @@ document.getElementById("DevOps").addEventListener("click", function() {
 });
 
 document.getElementById("DigiMarkCom").addEventListener("click", function() {
-    window.open("#", "_self");
+    window.open("/Edberg/digitalmarketing.html", "_self");
 });
 
 document.getElementById("DSA").addEventListener("click", function() {
-    window.open("#", "_self");
+    window.open("/Edberg/datastructures.html", "_self");
 });
 
 document.getElementById("FullStack").addEventListener("click", function() {
@@ -35,15 +35,15 @@ document.getElementById("HTML").addEventListener("click", function() {
 });
 
 document.getElementById("Java").addEventListener("click", function() {
-    window.open("#", "_self");
+    window.open("/Edberg/java.html", "_self");
 });
 
 document.getElementById("MySQL").addEventListener("click", function() {
-    window.open("#", "_self");
+    window.open("/Edberg/mysql.html", "_self");
 });
 
 document.getElementById("Python").addEventListener("click", function() {
-    window.open("#", "_self");
+    window.open("/Edberg/python.html", "_self");
 });
 
 document.getElementById("Salesforce").addEventListener("click", function() {
