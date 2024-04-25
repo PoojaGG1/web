@@ -3,7 +3,7 @@ document.getElementById("AIML").addEventListener("click", function() {
 });
 
 document.getElementById("DS").addEventListener("click", function() {
-    window.open("#", "_self");
+    window.open("/Edberg/datasciencecourse.html", "_self");
 });
 
 document.getElementById("DA").addEventListener("click", function() {
