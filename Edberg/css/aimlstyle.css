@@ -7,6 +7,7 @@
 .bg-cream {
     background-color: #fff2e1;
     position: inherit;
+
 }
 
 nav {
@@ -62,6 +63,7 @@ nav .navbar .links li a {
 .hero {
     border-bottom-left-radius: 10%;
     border-bottom-right-radius: 10%;
+    
 }
 
 .hero .main {
@@ -145,7 +147,7 @@ h2 {
     justify-content: center;
     border-radius: 10px;
     position: fixed;
-    max-width: 20%;
+    max-width:20%;
     top: 60%;
     right: 5%;
     transform: translateY(-50%);
@@ -189,6 +191,7 @@ h2 {
     display: flex;
     align-items: center;
     margin-bottom: 20px;
+    
     /* Add margin for spacing */
 }
 
