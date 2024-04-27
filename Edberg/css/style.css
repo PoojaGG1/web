@@ -63,7 +63,6 @@ nav .navbar .links li a {
 }
 
 nav .navbar .links li .arrow {
-    /* background: red; */
     height: 100%;
     width: 22px;
     line-height: 70px;
@@ -731,14 +730,17 @@ nav .navbar .links li:hover .js-sub-menu {
 }
 
 .feature-card .card {
-    /* padding: 30px 30px;*/
     text-align: center;
     border: 1px solid #e0e0e0;
     width: 350px;
-    /* box-shadow: 2px 2px 15px rgb(217, 216, 216); */
     border-radius: 10px;
     cursor: pointer;
     transition: 0.3s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 400px;
+    overflow: hidden;
 }
 
 .feature-card .card:hover {
@@ -752,6 +754,7 @@ nav .navbar .links li:hover .js-sub-menu {
 }
 
 .feature-card .card p {
+    margin-bottom: 6px;
     color: #6b7280;
 }
 
@@ -760,6 +763,11 @@ nav .navbar .links li:hover .js-sub-menu {
     height: max-content;
     border-radius: 5px;
     object-fit: cover;
+}
+
+.feature-card .card .card-footer {
+    margin-top: auto;
+    /* Push the footer to the bottom */
 }
 
 footer {
