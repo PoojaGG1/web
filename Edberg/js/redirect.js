@@ -27,11 +27,11 @@ document.getElementById("DSA").addEventListener("click", function() {
 });
 
 document.getElementById("FullStack").addEventListener("click", function() {
-    window.open("#", "_self");
+    window.open("/Edberg/FullStackDev.html", "_self");
 });
 
 document.getElementById("HTML").addEventListener("click", function() {
-    window.open("#", "_self");
+    window.open("/Edberg/HTMLcssJS.html", "_self");
 });
 
 document.getElementById("Java").addEventListener("click", function() {
@@ -47,13 +47,13 @@ document.getElementById("Python").addEventListener("click", function() {
 });
 
 document.getElementById("Salesforce").addEventListener("click", function() {
-    window.open("#", "_self");
+    window.open("/Edberg/SalesCourse.html", "_self");
 });
 
 document.getElementById("SQLDev").addEventListener("click", function() {
-    window.open("#", "_self");
+    window.open("/Edberg/SQLDev.html", "_self");
 });
 
 document.getElementById("UIUX").addEventListener("click", function() {
-    window.open("#", "_self");
+    window.open("/Edberg/UIUX.html", "_self");
 });
