@@ -5,8 +5,32 @@
 }
 
 .bg-cream {
-    background-color: #fff2e1;
-    position: inherit;
+    position: relative;
+    /* Needed for z-index */
+}
+
+.bg-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    /* Behind other content */
+    opacity: 1;
+    /* Initially fully visible */
+    transition: opacity 0.5s;
+    /* Smooth transition */
+    /* animation: fadeOut 3s forwards; */
+}
+
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
 }
 
 nav {
@@ -29,6 +53,11 @@ nav .navbar {
     align-items: center;
     justify-content: space-evenly;
     margin: auto;
+}
+
+nav .navbar .brand-logo {
+    width: 80px;
+    height: 80px;
 }
 
 nav .navbar .nav-links {
@@ -315,14 +344,21 @@ nav .navbar .links li:hover .js-sub-menu {
 }
 
 .hero {
+    height: 500px;
     border-bottom-left-radius: 20%;
     border-bottom-right-radius: 20%;
+    position: relative;
+    overflow: hidden;
 }
 
 .hero .main {
     display: flex;
+    height: inherit;
     justify-content: space-between;
     align-items: center;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-bottom-left-radius: inherit;
+    border-bottom-right-radius: inherit;
     padding: 0px 30px;
 }
 
@@ -335,7 +371,8 @@ nav .navbar .links li:hover .js-sub-menu {
 
 .hero .main .hero-content h2 {
     font-size: 3rem;
-    color: #2f327d;
+    color: darkblue;
+    text-shadow: 1px 1px 2px lightgray;
 }
 
 .hero .main .hero-content span {
@@ -343,6 +380,8 @@ nav .navbar .links li:hover .js-sub-menu {
 }
 
 .hero .hero-content p {
+    color: aliceblue;
+    text-shadow: 1px 1px 3px black;
     font-size: 25px;
 }
 

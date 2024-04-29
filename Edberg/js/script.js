@@ -37,4 +37,15 @@ menuBtn.addEventListener('click', () => {
     navLink.style.display = navLink.style.display === 'none' ? 'flex' : 'none';
 });
 
-//accordian code
+//animation for background image in landing page
+document.addEventListener('scroll', function() {
+    var heroSection = document.querySelector('.hero');
+    var bgImg = document.querySelector('.bg-img');
+
+    // Calculate the opacity based on scroll position
+    var opacity = 1 - (window.scrollY / heroSection.offsetHeight);
+    opacity = Math.min(Math.max(opacity, 0), 1); // Ensure opacity is between 0 and 1
+
+    // Set the opacity of the image
+    bgImg.style.opacity = opacity.toString();
+});
