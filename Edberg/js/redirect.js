@@ -1,5 +1,5 @@
 document.getElementById("AIML").addEventListener("click", function() {
-    window.open("/Edberg/aimlcourse.html", "_self");
+    window.open("/Edberg/courses/aimlcourse.html", "_self");
 });
 
 document.getElementById("DS").addEventListener("click", function() {
