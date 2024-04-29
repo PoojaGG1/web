@@ -7,7 +7,7 @@ document.getElementById("DS").addEventListener("click", function() {
 });
 
 document.getElementById("DA").addEventListener("click", function() {
-    window.open("#", "_self");
+    window.open("/Edberg/courses/DataAnalytics.html", "_self");
 });
 
 document.getElementById("Cyber").addEventListener("click", function() {
