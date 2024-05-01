@@ -208,7 +208,7 @@ nav .navbar .links li:hover .js-sub-menu {
 
 .hero {
     margin-top: 100px;
-    height: 500px;
+    height: 580px;
     border-bottom-left-radius: 20%;
     border-bottom-right-radius: 20%;
     position: relative;
@@ -235,8 +235,8 @@ nav .navbar .links li:hover .js-sub-menu {
 
 .hero .main-section .hero-content h2 {
     font-size: 3rem;
-    color: darkblue;
-    text-shadow: 1px 1px 2px lightgray;
+    color: #fdfdfd;
+    text-shadow: 1px 1px 2px #000;
 }
 
 .hero .main-section .hero-content span {
