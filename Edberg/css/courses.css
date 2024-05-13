@@ -183,6 +183,9 @@ nav ul li a {
     height: 150px;
 }
 
+.content ul li{
+    margin-bottom: 10px;
+}
 
 /* Changes from plus sign to negative sign once active */
 
