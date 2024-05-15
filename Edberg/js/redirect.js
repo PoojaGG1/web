@@ -15,7 +15,7 @@ document.getElementById("Cyber").addEventListener("click", function() {
 });
 
 document.getElementById("DevOps").addEventListener("click", function() {
-    window.open("#", "_self");
+    window.open("/Edberg/courses/DevOps.html", "_self");
 });
 
 document.getElementById("DigiMarkCom").addEventListener("click", function() {

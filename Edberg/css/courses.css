@@ -180,7 +180,7 @@ nav ul li a {
 }
 
 .accordion .container.active .content {
-    height: 150px;
+    max-height: 500px;
 }
 
 .content ul li{
@@ -220,12 +220,12 @@ nav ul li a {
 
 .accordion .content {
     position: relative;
-    height: 0;
+    max-height: 0;
     font-size: 20px;
     text-align: justify;
     width: 780px;
     overflow: hidden;
-    transition: 0.5s;
+    transition: max-height 0.5s ease-in-out; /* Use max-height for smooth animation */
 }
 
 
@@ -243,14 +243,14 @@ nav ul li a {
 
 .highlights-container {
     display: flex;
-    justify-content: space-evenly;
+    flex-wrap: wrap;
+    justify-content: space-around;
     margin-top: 30px;
     padding: 10px;
 }
 
 .highlight-item {
-    flex: 1;
-    max-width: 250px;
+    max-width: 280px;
     margin-bottom: 30px;
     background-color: #f2f2f2;
     padding: 20px;
