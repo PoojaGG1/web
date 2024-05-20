@@ -534,18 +534,21 @@ footer {
 }
 
 .footer {
-    height: 200px;
+    /* height: 200px; */
     justify-content: space-evenly;
     flex-direction: row;
     font-size: 16px;
 }
 
 footer img {
-    height: 90px;
+    height: 65px;
 }
 
 .footer p {
-    margin: 0%;
+    font-size: 16px; 
+    margin-left: 5px;  
+    justify-content: center;
+    align-self: center;
 }
 
 .footer h4 {
