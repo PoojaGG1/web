@@ -357,7 +357,7 @@ nav .navbar .links li:hover .js-sub-menu {
 .heroine {
     background-color: #fff2e1;
     margin-top: 30px;
-    padding: 50px 0;
+    padding: 20px 0;
     text-align: center;
     border-top-left-radius: 50px;
     border-top-right-radius: 50px;
@@ -396,20 +396,6 @@ nav .navbar .links li:hover .js-sub-menu {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-.benefit-image {
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    display: flex;
-    background-color: #fff;
-    border-radius: 5px;
-    padding: 15px;
-    margin: 10px;
-    width: 120px;
-    height: 120px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
 .benefit-card h2 {
     font-size: 1.2em;
     margin-bottom: 10px;
@@ -424,6 +410,20 @@ nav .navbar .links li:hover .js-sub-menu {
     list-style: none;
     padding: 0;
     margin-left: 20px;
+}
+
+.benefit-image {
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    display: flex;
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 15px;
+    margin: 10px;
+    width: 120px;
+    height: 120px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .benefit-card li {
@@ -457,6 +457,7 @@ nav .navbar .links li:hover .js-sub-menu {
 .Reviews h2 {
     text-align: center;
     padding: 20px;
+    color: #2f327d;
 }
 
 .review-container {
@@ -464,16 +465,20 @@ nav .navbar .links li:hover .js-sub-menu {
     justify-content: space-around;
     flex-wrap: wrap;
     margin: 0 auto;
-    width: 80%;
+    
 }
 
 .review-box {
-    text-align: center;
+    display:flex;
+    flex-direction: column;
+    text-align: justify;
     border: 1px solid #ddd;
     border-radius: 5px;
-    padding: 10px;
+    padding: 14px;
     margin: 10px;
-    width: 30%;
+    width: 25%;
+    /* min-height: 200px; */
+    background-color: #fafafa;
 }
 
 .review img {
@@ -484,11 +489,18 @@ nav .navbar .links li:hover .js-sub-menu {
 }
 
 .review-info {
-    margin-bottom: 10px;
+    margin-top: auto;
+    text-align: center;
+}
+
+.review-info h3{
+    font-weight: 500;
+    color: #2f327d;
 }
 
 .review-text p {
-    margin-bottom: 5px;
+    font-size: 16px;
+    margin-bottom: 8px;
 }
 
 .view-all-reviews {
