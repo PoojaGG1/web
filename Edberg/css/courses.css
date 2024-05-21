@@ -76,6 +76,7 @@ nav ul li a {
 
 .get-certified-container p {
     margin-right: 20px;
+    text-align: justify;
 }
 
 .Enroll-Now-button {
@@ -110,6 +111,12 @@ nav ul li a {
     animation: fadeIn 0.5s ease-in-out forwards;
 }
 
+.popup .desc {
+    text-align: left;
+    margin: 5px;
+    margin-bottom: 10px;
+}
+
 .hero .main {
     display: flex;
     height: inherit;
@@ -119,10 +126,6 @@ nav ul li a {
     border-bottom-left-radius: inherit;
     border-bottom-right-radius: inherit;
     padding: 0px 30px;
-}
-
-.popup .desc {
-    margin-bottom: 10px;
 }
 
 @keyframes fadeIn {
@@ -162,6 +165,10 @@ nav ul li a {
 .course-info-container h2 {
     text-align: center;
     margin-bottom: 10px;
+}
+
+.course-info-container p {
+    text-align: left;
 }
 
 .accordion {

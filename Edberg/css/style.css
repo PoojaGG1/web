@@ -354,37 +354,19 @@ nav .navbar .links li:hover .js-sub-menu {
     /* Push the footer to the bottom */
 }
 
-.heroine {
-    background-color: #fff2e1;
-    margin-top: 30px;
-    padding: 20px 0;
-    text-align: center;
-    border-top-left-radius: 50px;
-    border-top-right-radius: 50px;
-    width: auto;
-}
-
-.heroine-text-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 50%;
-}
-
-.heroine h1 {
-    font-size: 3em;
-    margin-bottom: -50px;
-}
-
 .benefits-container {
     background-color: #fff2e1;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    margin-top: 30px;
     padding: 20px;
-    border-bottom-left-radius: 50px;
-    border-bottom-right-radius: 50px;
+    border-radius: 50px;
+}
+
+.benefits-heading{
+    margin-top: 10px;
+    margin-bottom: 25px;
 }
 
 .benefit-card {
@@ -439,6 +421,8 @@ nav .navbar .links li:hover .js-sub-menu {
 .benefits-button {
     text-align: center;
     padding: 20px;
+    margin-top: 10px;
+    margin-bottom: 15px;
 }
 
 .benefits-button a {
