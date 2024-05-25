@@ -40,8 +40,8 @@ menuBtn.addEventListener('click', () => {
 
 // const hero = document.querySelector('.bg-img');
 // const images = [
-//     '/Edberg/images/grp_std.jpg',
-//     '/Edberg/images/group study.png'
+//     'images/grp_std.jpg',
+//     'images/group study.png'
 // ];
 // let currentIndex = 0;
 
