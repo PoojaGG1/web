@@ -58,15 +58,16 @@
                                     </ul>
                                 </li>
                                 <li><a href="#">HOME</a></li>
-                                <li><a href="#">ABOUT US</a></li>
                                 <li><a href="#">BLOG</a></li>
                             </ul>
                         </div>
                         <button class="menu-btn" id="menu-btn">Menu</button>
-                        <div class="search">
-                            <input type="text" class="search-box" placeholder="search courses">
-                            <button class="search-btn">search</button>
+
+                        <div class="search" id="search-container">
+                            <input type="text" class="search-box" id="search-input" placeholder="search courses">
+                            <button class="search-btn" id="search-button">search</button>
                         </div>
+                        <div id="results" class="search-result"></div>
 
                         <div class="login">
                             <a href="regindex.html">LOGIN</a>
@@ -451,6 +452,7 @@
     <script src="split.js "></script>
     <script src="js/script.js"></script>
     <script src="js/redirect.js"></script>
+    <script src="js/search.js"></script>
 </body>
 
 </html>
