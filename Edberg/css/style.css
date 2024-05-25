@@ -254,7 +254,7 @@ nav .navbar .links li:hover .js-sub-menu {
 }
 
 .bg-img {
-    background-image: url('/Edberg/images/grp_std.jpg'), url('/Edberg/images/group_study.png');
+    background-image: url('/images/grp_std.jpg'), url('/images/group_study.png');
     /* Two images separated by comma */
     background-size: cover;
     /* Resize images to fit the element */
