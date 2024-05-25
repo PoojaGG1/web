@@ -140,9 +140,10 @@ nav .navbar .links li:hover .js-sub-menu {
     border-radius: 3px;
 }
 
- .search {
+.search {
     width: 500px;
     display: inline-flex;
+    position: relative;
 }
 
 .search-box {
@@ -156,7 +157,6 @@ nav .navbar .links li:hover .js-sub-menu {
     color: #a9a9a9;
     margin-left: 30%;
 }
-
 
 .search-btn {
     width: 20%;
@@ -177,6 +177,10 @@ nav .navbar .links li:hover .js-sub-menu {
     color: #a9a9a9;
 }
 
+#seach-container {
+    position: relative;
+}
+
 #search-button {
     padding: 10px;
     border: 1px solid #ccc;
@@ -187,12 +191,32 @@ nav .navbar .links li:hover .js-sub-menu {
     background-color: #e0e0e0;
 }
 
-.search-result {
-    margin-top: 10px;
-    padding: 10px;
+#results {
+    display: none; /* Hide the results container initially */
+    position: absolute; /* Position absolutely within the search container */
+    top: 100%; /* Position directly below the search container */
+    left: 30%; /* Align with the search box */
+    /* width: 100%; Match the width of the search box */
     border: 1px solid #ccc;
     border-radius: 4px;
-    background-color: #f9f9f9;
+    background-color: #fff;
+    text-transform: capitalize;
+    z-index: 1000; /* Ensure the results are above other content */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.search-result {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+    cursor: pointer;
+}
+
+.search-result:hover {
+    background-color: #e9e8e8;
+}
+
+.search-result:last-child {
+    border-bottom: none; /* Remove the border from the last result */
 }
 
 .login {
